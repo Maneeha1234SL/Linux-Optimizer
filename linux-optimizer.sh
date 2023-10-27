@@ -251,7 +251,7 @@ sleep 0.5
 case $OS in
 ubuntu)
     # Ubuntu
-    wget "https://raw.githubusercontent.com/hawshemi/Linux-Optimizer/main/scripts/ubuntu-optimizer.sh" -q -O ubuntu-optimizer.sh && chmod +x ubuntu-optimizer.sh && bash ubuntu-optimizer.sh 
+    wget "https://raw.githubusercontent.com/Maneeha1234SL/Linux-Optimizer/main/scripts/ubuntu-optimizer.sh" -q -O ubuntu-optimizer.sh && chmod +x ubuntu-optimizer.sh && bash ubuntu-optimizer.sh 
     ;;
 debian)
     # Debian
