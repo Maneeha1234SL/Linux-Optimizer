@@ -1,7 +1,6 @@
 #!/bin/bash
 # https://github.com/hawshemi/Linux-Optimizer
-export DEBIAN_FRONTEND=noninteractive
-export NEEDRESTART_MODE=a
+
 
 # Green, Yellow & Red Messages.
 green_msg() {
@@ -172,6 +171,8 @@ EOF
 
 # Install useful packages
 installations() {
+    export DEBIAN_FRONTEND=noninteractive
+    export NEEDRESTART_MODE=a
     echo 
     yellow_msg 'Installing Useful Packages...'
     echo 
@@ -436,6 +437,9 @@ ufw_optimizations() {
     yellow_msg 'Installing & Optimizing UFW...'
     echo 
     sleep 0.5
+
+    export DEBIAN_FRONTEND=noninteractive
+    export NEEDRESTART_MODE=a
 
     ## Purge firewalld to install UFW.
     sudo apt -y purge firewalld
