@@ -1,6 +1,7 @@
 #!/bin/bash
 # https://github.com/hawshemi/Linux-Optimizer
-
+export DEBIAN_FRONTEND=noninteractive
+export NEEDRESTART_MODE=a
 
 # Green, Yellow & Red Messages.
 green_msg() {
