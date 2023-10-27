@@ -70,6 +70,8 @@ ask_reboot() {
 
 # Update & Upgrade & Remove & Clean
 complete_update() {
+    export DEBIAN_FRONTEND=noninteractive
+    export NEEDRESTART_MODE=a
     echo 
     yellow_msg 'Updating the System... (This can take a while.)'
     echo 
@@ -98,6 +100,8 @@ complete_update() {
 
 # Install XanMod Kernel
 install_xanmod() {
+    export DEBIAN_FRONTEND=noninteractive
+    export NEEDRESTART_MODE=a
     echo 
     yellow_msg 'Checking XanMod...'
     echo 
